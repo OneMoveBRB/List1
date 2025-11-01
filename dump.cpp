@@ -3,24 +3,6 @@
 #include <stdio.h>
 #include <assert.h>
 
-// struct Node {
-//     type value;
-//     size_t next;
-//     size_t prev;
-// };
-
-// struct Nodes {
-//     Node* data;
-//     size_t size;
-//     size_t capacity;
-// };
-
-// // Полное определение List_t (только в .cpp файле)
-// struct List_t {
-//     Nodes  arr;
-//     size_t free;
-// };
-
 void ListDump(List_t* list) { // FIXME используй написанные функции
     FILE* fp = fopen("List_test.txt", "a"); // FIXME file name в константу
     if (fp == NULL) {
